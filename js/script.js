@@ -1,13 +1,23 @@
 $(document).ready(function() {
 
     // SECTION 1: Button Styling
-    $("#loadBtn").click(function () {
-    $("#contentArea").append("<p>This text was added dynamically!</p>");
-});
 
     $(".border-btn").on("click", function(){
         $(this).toggleClass("active-border"); 
     });
+
+    $("#loadBtn").click(function () {
+    var text = $("#textInput").val();
+
+    if (text === "") {
+        alert("Please enter some text");
+        return;
+    }
+
+    $("#contentArea").append("<p class='dynamic-text'>" + text + "</p>");
+
+    $("#textInput").val("");
+});
 
     // SECTION 2: Toggle text
    $(".toggle-btn").click(function(){

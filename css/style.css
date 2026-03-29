@@ -51,3 +51,30 @@ button:active {
     background-color: #ff6b6b;
     margin-top: 10px;
 }
+
+#textInput {
+    padding: 8px;
+    margin: 10px 5px;
+    border-radius: 6px;
+    border: 1px solid #888;
+}
+
+.dynamic-text {
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

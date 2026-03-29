@@ -17,12 +17,15 @@ $(document).ready(function() {
     $("#contentArea").append("<p class='dynamic-text'>" + text + "</p>");
 
     $("#textInput").val("");
-});
+    });
+    $("#clearTextBtn").click(function () {
+      $("#contentArea").empty();
+    });
 
     // SECTION 2: Toggle text
-   $(".toggle-btn").click(function(){
+     $(".toggle-btn").click(function(){
     $(this).siblings("p").slideToggle("slow"); 
-});
+    });
 
     // SECTION 3: Color input + storage
     $("#submitColor").click(function(){

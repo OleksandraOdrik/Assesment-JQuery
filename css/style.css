@@ -1,8 +1,14 @@
 body {
-	font-family:Arial, sans-serif;
-	margin: 40px;
-	background-color: #f4f4f4;
-	
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #fce4ec);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
 }
 
 h2{
@@ -12,21 +18,17 @@ h2{
 
 button{
 
-	border-radius: 6px;
-	border:1px solid #888;
-	cursor: pointer;
-	background-color:pink;
-	text-align: center;
-	padding: 8px 16px;
-	color: black;
-	margin: 5px;
-	transition: all 0.3s ease;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    background-color: #ffb6b6;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 button:hover {
-	background-color:#b6bbbc;
-	color: white;
-	transform: scale(1.05);
+    background-color: #ff6b6b;
+    color: white;
 }
 
 button:active {
@@ -34,10 +36,11 @@ button:active {
 }
 
 .section{
-	background:#94d6e3;
-	padding: 20px;
-	border-radius:10px;
-	margin-bottom: 30px;
+    background: #8cc0cc;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 
@@ -54,9 +57,8 @@ button:active {
 
 #textInput {
     padding: 8px;
-    margin: 10px 5px;
-    border-radius: 6px;
-    border: 1px solid #888;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
 
 #clearTextBtn {

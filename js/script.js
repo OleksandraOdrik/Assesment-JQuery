@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    // SECTION 1: Button Styling
+    // Section 1: Button Styling
 
     $(".border-btn").on("click", function(){
         $(this).toggleClass("active-border"); 
@@ -22,12 +22,12 @@ $(document).ready(function() {
       $("#contentArea").empty();
     });
 
-    // SECTION 2: Toggle text
+    // Section 2: toggle text
      $(".toggle-btn").click(function(){
     $(this).siblings("p").slideToggle("slow"); 
     });
 
-    // SECTION 3: Color input + storage
+    // Section 3: color input and storage
     $("#submitColor").click(function(){
         var color = $("#favColor").val();
 
@@ -44,13 +44,13 @@ $(document).ready(function() {
         localStorage.setItem("bgColor", color);
     });
 
-    // LOAD saved color on refresh
+    // load saved color on refresh
     var savedColor = localStorage.getItem("bgColor");
     if(savedColor){
         $("body").css("background-color", savedColor);
     }
 
-    // RESET button
+    // reset button
     $("#output").after('<button id="resetColor">Reset Color</button>');
 
     $(document).on("click", "#resetColor", function(){

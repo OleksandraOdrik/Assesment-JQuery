@@ -1,9 +1,16 @@
 $(document).ready(function() {
 
     // Section 1: Button Styling
+    $(".border-btn").eq(0).click(function () {
+        $(this).toggleClass("glow");
+    });
 
-    $(".border-btn").on("click", function(){
-        $(this).toggleClass("active-border"); 
+    $(".border-btn").eq(1).click(function () {
+        $(this).toggleClass("pop");
+    });
+
+    $(".border-btn").eq(2).click(function () {
+        $(this).toggleClass("focus");
     });
 
     $("#loadBtn").click(function () {

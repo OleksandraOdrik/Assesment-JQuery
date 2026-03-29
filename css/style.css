@@ -84,3 +84,18 @@ button:active {
         transform: translateY(0);
     }
 }
+
+.glow {
+    box-shadow: 0 0 15px #ff6b6b;
+    border: 2px solid #ff6b6b;
+}
+
+.pop {
+    background-color: #ffd93d;
+    transform: scale(1.1);
+}
+
+.focus {
+    outline: 3px solid #4ecdc4;
+    background-color: #e0f7fa;
+}

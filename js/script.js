@@ -1,6 +1,10 @@
 $(document).ready(function() {
 
     // SECTION 1: Button Styling
+    $("#loadBtn").click(function () {
+    $("#contentArea").append("<p>This text was added dynamically!</p>");
+});
+
     $(".border-btn").on("click", function(){
         $(this).toggleClass("active-border"); 
     });

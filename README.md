@@ -48,3 +48,6 @@ AI was used to:
 All suggestions provided by AI were reviewed, tested, and adapted before being included in the project. I made sure to understand how the code works rather than copying it without knowledge.
 
 AI was used as a support tool to improve my understanding and development process.
+
+## Note
+Please ignore the Assesment JQuery folder. For this assignment I worked with all files except the Assesment JQuery folder.

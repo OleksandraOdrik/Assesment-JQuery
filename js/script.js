@@ -36,26 +36,29 @@ $(document).ready(function() {
 
     // Section 3: color input and storage
     $("#submitColor").click(function(){
-        var color = $("#favColor").val();
+    var color = $("#favColor").val();
 
-        if(color === ""){
-            $("#output").html("<p>Please enter a color.</p>");
-            return;
-        }
+    if(color === ""){
+        $("#output").html("<p>Please enter a color.</p>");
+        return;
+    }
 
-        $("#output").html("<p>Your favourite colour is <b>" + color + "</b>.</p>");
+    $("#output").html("<p>Your favourite colour is <b>" + color + "</b>.</p>");
+        $("body").css("background", color);
 
-        $("body").css("background-color", color);
-
-        // SAVE color
-        localStorage.setItem("bgColor", color);
+     localStorage.setItem("bgColor", color);
     });
 
-    // load saved color on refresh
     var savedColor = localStorage.getItem("bgColor");
     if(savedColor){
-        $("body").css("background-color", savedColor);
+    $("body").css("background", savedColor);
     }
+
+    $(document).on("click", "#resetColor", function(){
+      $("body").css("background", "linear-gradient(to right, #e0f7fa, #fce4ec)");
+        localStorage.removeItem("bgColor");
+        $("#output").html("<p>Color reset.</p>");
+    });
 
     // reset button
     $("#output").after('<button id="resetColor">Reset Color</button>');
